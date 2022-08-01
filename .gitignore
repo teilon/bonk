@@ -1,0 +1,7 @@
+**/*.txt
+**/*.log
+
+!requirement*
+
+**/__pycache__/
+venv/
