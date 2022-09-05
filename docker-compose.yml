@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8'
 
 services:
     web:
@@ -9,4 +9,4 @@ services:
         environment:
           - TELEGRAM_API_TOKEN=1198378294:AAFmuBaTdJ-A1nUsntRKe-X8lqsfnRBo3SU
 
-        command: python -m uvicorn main:app --host 0.0.0.0 --port 80
+        command: uvicorn main:app --host 0.0.0.0 --port 80
