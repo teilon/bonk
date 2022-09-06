@@ -45,7 +45,6 @@ def start_bot() -> None:
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
 
-    # on different commands - answer in Telegram
     dispatcher.add_handler(CommandHandler("set", set_timer))
     dispatcher.add_handler(CommandHandler("unset", unset))
 
